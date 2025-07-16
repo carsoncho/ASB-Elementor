@@ -1,15 +1,15 @@
 <?php
 
-class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
+class Decorative_Box_Hover_Grid extends \Elementor\Widget_Base {
 
     use \Elementor\Includes\Widgets\Traits\Button_Trait;
 
 	public function get_name(): string {
-		return 'hello_world_widget_2';
+		return 'decorative_box_hover_grid';
 	}
 
 	public function get_title(): string {
-		return esc_html__( 'Box Grid Hover Widget', 'elementor-addon' );
+		return esc_html__( 'Decorative Box Hover Grid', 'elementor-addon' );
 	}
 
 	public function get_icon(): string {

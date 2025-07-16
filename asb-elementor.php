@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ASB Elementor Addons
- * Description: Simple hello world widgets for Elementor.
+ * Description: Simple widgets for Elementor.
  * Version:     1.0.0
  * Author:      Carson Oldson
  * Text Domain: asb-elementor
@@ -13,9 +13,9 @@
 
 function register_asb_widgets( $widgets_manager ) {
 
-	require_once( __DIR__ . '/widgets/hello-world-widget-2.php' );
+	require_once( __DIR__ . '/widgets/decorative-box-hover-grid.php' );
 
-	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
+	$widgets_manager->register( new \Decorative_Box_Hover_Grid() );
 
 }
 add_action( 'elementor/widgets/register', 'register_asb_widgets' );
