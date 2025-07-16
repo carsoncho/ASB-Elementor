@@ -1,0 +1,55 @@
+.section-container {
+  height: 50vh;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-container,
+.cta-container {
+  position: relative;
+  z-index: 10;
+}
+
+.heading-container {
+  pointer-events: none;
+}
+
+.cta-container {
+  width: auto;
+  margin: 0 auto;
+}
+
+.box-background-container {
+  inset: 16px;
+  z-index: 0;
+  width: auto;
+  height: auto;
+  min-height: 400px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.box-wrapper {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  inset: 0%;
+  position: absolute;
+  overflow: hidden;
+  width: 120%;
+}
+
+.box {
+  border-width: 0.5px;
+  border-style: solid;
+  transition: all 0.8s;
+}
+
+.box:hover {
+  transition: all 0s;
+}
